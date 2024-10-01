@@ -97,5 +97,34 @@ public class Percabangan {
         System.out.println("Total discount = "+discount*100);
         System.out.println("Total bayar = Rp. "+totalAmount*(1-discount));
 
+        // Switch case
+        System.out.println("Pilih menu 1-5: ");
+        int chooseMenu = scanner.nextInt();
+        switch (chooseMenu){
+            case 1:
+                System.out.println("Menu ke-1");
+                break;
+            case 2:
+                System.out.println("Menu ke-2");
+                break;
+            case 3:
+                System.out.println("Menu ke-3");
+                break;
+            case 4:
+                System.out.println("Menu ke-4");
+                break;
+            case 5:
+                System.out.println("Menu ke-5");
+                break;
+            default:
+                System.out.println("Menu tidak terdaftar");
+                break;
+        }
+
+        // Ternary
+        int nilai = scanner.nextInt();
+        String keterangan = nilai >= 75 ? "Lulus" : "Tidak lulus";
+        System.out.println(keterangan);
+
     }
 }
